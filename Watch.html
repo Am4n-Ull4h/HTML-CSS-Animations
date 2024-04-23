@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: rgba(240, 240, 234, 0.79);
+
+    }
+    .Main{
+        height: 300px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 35%;
+        transition: all 1s;
+    }
+    .OutSilver{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: 2px 1px 1px black, -2px -1px 1px black;
+        position: absolute;
+        transition: all 1s;
+
+    }
+    .Main:hover .OutSilver{
+    background-color: rgb(35, 30, 30);
+}
+    .Line{
+        height: 310px;
+        width: 50px;
+        background-color: black;
+        transform: rotate(115deg);
+        border-radius: 53% 52% 100% 29% / 19% 61% 16% 51% ;
+        transition: all 1s;
+    }
+    .Main:hover .Line{
+    background-color: rgb(255, 255, 255);
+}
+    .Secs {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: 8px dotted black;
+    position: absolute;
+    opacity: 0.2;
+    transition: all 1s;
+    transform: rotate(3deg);
+}
+.Main:hover .Secs{
+    border: 8px dotted rgb(255, 255, 255);
+}
+
+    .Uprclr{
+        height: 285px;
+        width: 285px;
+        background-color: rgb(148, 111, 111);
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 2px 2px 1px white;
+    }
+    .Main:hover .Uprclr{
+    background-color: rgb(123, 122, 122);
+}
+    .Belts{
+        height: 380px;
+        width: 150px;
+        background-color: black;
+        position: absolute;
+        
+        border-radius: 5px; 
+        box-shadow: 2px 1px 2px black, -2px -2px 2px black;
+    }
+    .Main:hover .Belts{
+        height: 445px;
+}
+    
+    .Belts::before{
+        content: '';
+        position: absolute;
+        margin-left: -10px;
+    height:380px ;
+    border-radius: 50%;
+    width: 20px;
+    background-color: azure;
+    box-shadow: -2px 1px 2px black;
+}
+.Main:hover .Belts::before{
+transform: scale(1.2);
+margin-top: 30px;
+}
+.Belts::after{
+        content: '';
+        position: absolute;
+        margin-left: 140px;
+    height:380px ;
+    border-radius: 50%;
+    width: 20px;
+    background-color: azure;
+    box-shadow: 2px 1px 2px black;
+}
+.Main:hover .Belts::after{
+transform: scale(1.2);
+margin-top: 30px;
+
+}
+.Date{
+    position: absolute;
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    transition: all 1s;
+}
+.Main:hover .Date{
+    color: white;
+}
+.Blackn{
+    height: 87px;
+    width: 4px;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px rgb(174, 168, 168);
+    position: absolute;
+    transform: rotate(20deg);
+    margin-top: 54px;
+    margin-left: 0px;
+    animation-name: bl;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all 2s;
+
+}
+
+@keyframes bl {
+    0%{
+    transform: rotate(20deg);
+        
+    }
+    100%{
+        transform: rotateZ(380deg) ;
+    }
+}
+.Whiten{
+    height: 60px;
+    width: 4px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px rgb(174, 168, 168);
+    position: absolute ;
+    transform: rotate(120deg);
+    margin-top: 80px;
+    margin-left: 0px;
+    animation-name: wh;
+    animation-duration: 86400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all 2s;
+
+}
+@keyframes wh {
+    0%{
+    transform: rotate(120deg);
+        
+    }
+    100%{
+        transform: rotateZ(480deg) ;
+    }
+}
+.Redn{
+    height: 112px;
+    width: 1px;
+    background-color: rgb(203, 10, 10);
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px rgb(174, 168, 168);
+    position: absolute ;
+    transform: rotate(220deg);
+    margin-top: 29px;
+    margin-left: -3px;
+    animation-name: rd;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all 2s;
+}
+
+@keyframes rd {
+    0%{
+        transform: rotate(220deg);
+    }
+    100%{
+        transform: rotate(580deg) ;
+    }
+}
+
+.Reddot{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(203, 10, 10);
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px rgb(174, 168, 168);
+    position: absolute;
+    transform: rotate(220deg);
+    margin-top: 141px;
+    margin-left: -3px;
+}
+.twe{
+    position: absolute;
+    margin-top: -100px;
+}
+.the{
+    position: absolute;
+    margin-top: 143px;
+    margin-left: 245px;
+}
+.six{
+    position: absolute;
+    margin-top: 380px;
+}
+.nin{
+    position: absolute;
+    margin-top: 119px;
+    margin-left: -245px;
+}
+.Nam{
+    position: absolute;
+    color: white;
+    margin-top: -350px;
+}
+.crr{
+    color: red;
+}
+.dff{
+    position: absolute;
+    margin-top: 270px;
+    width: 60px;
+    margin-left: 20px;
+}
+</style>
+<body>
+    <div class="Main">
+        <div class="Belts"></div>
+        <div class="Nam"><h3>Real-Rolex</h3></div>
+        <div class="OutSilver">
+            
+            <div class="Line"></div>
+            <div class="Uprclr">
+            </div>
+        </div>
+        <div class="Secs"></div>
+        <div class="Date">
+            <h5>17 Sep</h5>
+            
+            <div class="dff"><p>Meeting in <span class="crr">15</span> minutes</p></div>
+            <div class="twe"><h3>12</h4></div>
+            <div class="the"><h3>3</h4></div>
+            <div class="six"><h3>6</h4></div>
+            <div class="nin"><h3>9</h4></div>
+
+            <div class="Blackn"></div>
+            <div class="Whiten"></div>
+            <div class="Redn"></div>
+            <div class="Reddot"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(96, 125, 140);
+    }
+    .plate{
+        height: 130px;
+        width: 400px;
+        background-color: rgb(255, 250, 250);
+        border-radius: 60%;
+        margin-top: 200px;
+        box-shadow: 2px 8px 13px rgb(67, 65, 65), -1px -1px 2px rgb(65, 58, 58),inset 50px 5px 60px rgb(163, 162, 162),inset -50px -5px 10px rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-bottom: 8px solid rgb(255, 255, 255);
+    }
+    .Cup{
+        height: 250px;
+        width: 250px;
+        border-radius: 10%;
+        margin-top: 20px;
+        background-color: rgb(231, 228, 228);
+        border-radius: 0% 0% 26% 34% / 0% 0% 46% 51%  ;
+        position: absolute;
+        box-shadow: 0px 2px 10px rgb(114, 113, 113) ;
+        border-top: 10px solid rgb(231, 228, 228);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+     
+    }
+    
+    
+    .Handle{
+        height: 120px;
+        width: 230px;
+        background-color: transparent;
+        margin-left: 80px;
+        border-radius: 80%;
+        border-right: 20px solid rgb(231, 228, 228);
+        border-top: 20px solid rgb(231, 228, 228);
+        transform: SkewX(130deg);
+        position: absolute;
+        
+    }
+    .Tea{
+        width: 230px;
+        height: 35px;
+        background-color: rgba(110, 33, 33, 0.879);
+        position: absolute;
+        margin-top: -180px;
+        border-radius: 50%;
+        animation-name: Tmove;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes Tmove {
+        0%{
+
+        }
+        100%{
+            transform: skew(60deg) translateZ(-10px);
+            
+
+        }
+    }
+   
+    .s1{
+        height: 50px;
+        width: 30px;
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 5px rgb(255, 255, 255);
+        filter: blur(3);
+        border-radius: 20px;
+        opacity: 0.9;
+    }
+    
+    .Smoke{
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        margin-top: -250px;
+    }
+    .Smoke span{
+        height: 50px;
+        width: 5px;
+        background-color: whitesmoke;
+        border-radius: 50%;
+       animation: name duration timing-function delay iteration-count direction fill-mode;
+       animation-name: smok;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-direction: normal;
+       filter: blur(7px);
+       opacity: 0;
+    }
+    @keyframes smok {
+        0%{
+            transform: translateY(0) scale(1);
+        }
+        15%{
+            opacity: 1;
+        }
+        50%{
+            
+        }
+        100%{
+            transform: translateY(-170px) scale(7);
+            opacity: 1;
+        }
+    }
+    .a{
+        animation-delay: 2s;
+        animation-duration: 3s;
+    }
+    .s{
+        animation-delay: 0.4s;
+        animation-duration: 2s;
+    }
+    .d{
+        animation-delay: 26s;
+        animation-duration: 5s;
+    }
+    .f{
+        animation-delay: 4s;
+        animation-duration: 3s;
+    }
+    .g{
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+    .h{
+        animation-delay: 5s;
+        animation-duration: 2s;
+    }
+    .j{
+        animation-delay: 3s;
+        animation-duration: 3s;
+    }
+    .k{
+        animation-delay: 1s;
+    }
+    .l{
+        animation-delay: 6s;
+    }.z{
+        animation-delay: 1s;
+    }
+    .amm{
+        margin-top: 100px;
+        margin-left: 32%;
+        font-weight: 900;
+        font-size: 30px;
+        color: rgb(151, 86, 11);
+        position: absolute;
+        box-shadow: 2px 2px 3px rgb(103, 61, 16),inset 3px 2px 2px rgb(113, 52, 14);
+        transition: all 0.1s ease-in-out;
+        padding: 10px;
+    }
+    .Cup:hover .amm{
+        box-shadow: inset 5px 5px 10px rgb(66, 46, 46), 10px 10px 1px rgb(35, 112, 81),30px 30px 1px rgb(143, 28, 169), -10px -10px 1px rgb(17, 40, 107),-30px -30px 1px rgb(160, 99, 173);
+        color: rgb(125, 7, 7);
+
+    }
+</style>
+<body>
+        <div class="plate"></div>
+    <div class="Cup"><span class="amm">Aman</span></div>
+    <div class="Handle"></div>
+    <div class="Tea"></div>
+    <div class="Smoke">
+        <span class="a"></span>
+        <span class="s"></span>
+        <span class="d"></span>
+        <span class="f"></span>
+        <span class="g"></span>
+        <span class="h"></span>
+        <span class="j"></span>
+      
+    </div>
+</body>
+</html>

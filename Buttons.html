@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #012235;
+    }
+    .Main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 200px;
+        width: 70%;
+    }
+    .B1 button{
+        height: 40px;
+        width: 120px;
+        background-color: #06151f;
+        color: white;
+        cursor: pointer;
+      
+    }
+    .B1:hover{
+        box-shadow: 1px 1px 10px rgb(74, 70, 70), -1px -1px 10px rgb(74, 70, 70);
+    }
+    .B2:hover{
+        box-shadow: 1px 1px 10px rgb(74, 70, 70), -1px -1px 10px rgb(74, 70, 70);
+    }
+    .B3:hover{
+        box-shadow: 5px 5px 10px rgb(74, 70, 70), -5px -5px 20px rgb(74, 70, 70);
+    }
+    .B2 button{
+        height: 40px;
+        width: 120px;
+        background-color: #06151f;
+        color: white;cursor: pointer;
+    }
+    .B3 button{
+        height: 40px;
+        width: 120px;
+        background-color: #06151f;
+        color: white;cursor: pointer;
+    }
+    .Ul{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-bottom: 2px solid aqua;
+        border-right: 2px solid aqua;
+        margin-top: -40px;
+    }
+    
+    
+    .Ur{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-bottom: 2px solid aqua;
+        border-left: 2px solid aqua;
+        margin-top: -40px;
+        margin-left: 113px;
+    }
+    
+    .Bl{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-top: 2px solid aqua;
+        border-right: 2px solid aqua;
+        margin-top: -7px;
+    }
+    
+    .Br{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-top: 2px solid aqua;
+        border-left: 2px solid aqua;
+        margin-top: -7px;
+        margin-left: 113px;
+    }
+    .B1:hover .Bl{
+        animation-name: bl;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 1.5s;
+    }
+    .B1:hover .Br{
+        animation-name: br;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    .B1:hover .Ur{
+        animation-name: ur;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    .B1:hover .Ul{
+        animation-name: ul;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes ul {
+        0%{
+
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes ur {
+        0%{
+
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes br {
+        0%{
+
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes bl {
+        0%{
+
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+
+
+
+
+    .B2:hover .Bl{
+        animation-name: bl2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 1.5s;
+    }
+    .B2:hover .Br{
+        animation-name: br2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    .B2:hover .Ur{
+        animation-name: ur2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    .B2:hover .Ul{
+        animation-name: ul2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes ul2 {
+        0%{
+
+        }
+        100%{
+            margin-top: -6px;
+            margin-left: 114px;
+        }
+    }
+    @keyframes ur2 {
+        0%{
+
+        }
+        100%{
+            margin-top: -6px;
+            margin-left: -1px;
+        }
+    }
+    @keyframes br2 {
+        0%{
+
+        }
+        100%{
+            margin-top: -40px;
+            margin-left: -1px;
+        }
+    }
+    @keyframes bl2 {
+        0%{
+
+        }
+        100%{
+            margin-top: -40px;
+            margin-left: 113px;
+        
+        }
+    }
+    
+
+
+    .B3 .Ul{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-bottom: 2px solid aqua;
+        border-right: 2px solid aqua;
+        margin-top: -40px;
+    }
+    .B3 .Br{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-top: 2px solid aqua;
+        border-left: 2px solid aqua;
+        margin-top: -7px;
+        margin-left: 113px;
+    }
+
+
+
+    .B3:hover .Bl{
+        animation-name: bl3;
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    .B3:hover .Br{
+        animation-name: br3;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    .B3:hover .Ur{
+        animation-name: ur3;
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    .B3:hover .Ul{
+        animation-name: ul3;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes ul3 {
+        0%{
+
+        }
+        100%{
+            margin-top: -44px;
+            margin-left: -4px;
+            position: absolute;
+        height: 45px;
+        width: 125px;
+        border-bottom: 2px solid aqua;
+        border-right: 2px solid aqua;
+        }
+    }
+    @keyframes ur3 {
+        0%{
+
+        }
+        100%{
+           opacity: 0;
+        }
+    }
+    @keyframes br3 {
+        0%{
+
+        }
+        100%{
+            margin-top: -40px;
+            margin-left: -1px;
+            position: absolute;
+        height: 45px;
+        width: 125px;
+        border-top: 2px solid aqua;
+        border-left: 2px solid aqua;
+        }
+    }
+    @keyframes bl3 {
+        0%{
+
+        }
+        100%{
+            opacity: 0;
+        
+        }
+    }
+</style>
+<div class="Main">
+    <div class="B1">
+        <a href="##"><Button>BUTTON</Button></a>
+        <div class="Ul"></div>
+        <div class="Ur"></div>
+        <div class="Bl"></div>
+        <div class="Br"></div>
+
+    </div>
+    <div class="B2">
+        <a href="##"><Button>BUTTON</Button></a>
+        <div class="Ul"></div>
+        <div class="Ur"></div>
+        <div class="Bl"></div>
+        <div class="Br"></div>
+    </div>
+    <div class="B3">
+        <a href="##"><Button>Button</Button></a>
+        <div class="Ul"></div>
+        <div class="Ur"></div>
+        <div class="Bl"></div>
+        <div class="Br"></div>
+    </div>
+</div>
+<body>
+    
+</body>
+</html>

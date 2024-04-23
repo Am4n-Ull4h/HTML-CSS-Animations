@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(8, 54, 54);
+    }
+    .Main{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    }
+    .Rotate{
+        height: 170px;
+        width: 90px;
+        position: relative;
+        background-color: aqua;
+        transform-origin: bottom right;
+        animation-name: r1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        margin-top: -140px;
+        margin-left: -40px;
+        
+    }
+    @keyframes r1 {
+        0%{
+           transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .Rotate2{
+        height: 170px;
+        width: 90px;
+        position: relative;
+        background-color: rgb(4, 0, 255);
+        transform-origin: bottom right;
+        animation-name: r2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 2.5s;
+        margin-top: -171px;
+        margin-left: -40px;
+    }
+    @keyframes r2 {
+        0%{
+           transform: rotate(0deg);
+        }
+        
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .Uprr{
+        height: 192px;
+        width: 192px;
+        background-color: rgb(8, 54, 54);
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 2px 2px 1px rgb(63, 84, 84),inset -2px -2px 1px rgb(63, 84, 84),
+        2px 2px 1px red,-1px -1px 1px red;
+
+    }
+    .Uprr img{
+        height: 165px;
+        width: 165px;
+        border-radius: 50%;
+
+    }
+    .Main:hover .Rotate {
+        opacity: 0;
+    }
+    .Main:hover  .Uprr{
+        opacity: 0;
+    }
+    .Main:hover  .Rotate2 {
+        opacity: 0;
+    }
+    .DText{
+        height: 155px;
+        width: 155px;
+        border-radius: 50%;
+        position: absolute;
+        border: 2px solid black;
+        color: white;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 5px 3px 190px red, -5px -3px 170px red,inset 7px 7px 2px RED,inset -7px -7px 2px RED;
+    }
+    .Main:hover .DText{
+        opacity: 1;
+    }
+    .DText h4{
+        margin-top: -10px;
+    }
+    .DText .aaa{
+        color: aqua;
+    }
+    .DText button{
+        background-color: transparent;
+        border: 1px solid aqua;
+        color: white;
+        padding: 5px;
+        width: 80px;
+        border-radius: 70%;
+        cursor: pointer;
+    }
+    .DText button:hover{
+        background-color: aqua;
+        border: 2px solid white;
+        color: red;
+    }
+
+</style>
+<body>
+    <div class="Main">
+        <div class="Rotate"></div>
+        <div class="Rotate2"></div>
+        <div class="Uprr">
+            <img src="/Img/WhatsApp Image 2023-05-31 at 04.53.28.jpg" alt="">
+        </div>
+
+        <div class="DText">
+            <h2>Aman Ullah</h2>
+            <h4>Web <Span class="aaa">Develpor</Span></h4>
+            <button>Hire Me</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

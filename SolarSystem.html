@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: rgb(20, 66, 74);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+    .Main{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m1{
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m2{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m3{
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m4{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m5{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m6{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m7{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: inset 10px 1px 20px rgb(103, 126, 122);
+    }
+    .sun{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: 1px solid rgb(246, 204, 16);
+        background-color: rgb(246, 204, 16);
+        box-shadow: 1px 2px 1px rgb(81, 81, 60), -1px -1px 1px rgb(76, 76, 63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s1{
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        background: linear-gradient(rgb(183, 107, 52),rgb(214, 165, 69));
+        position: absolute;
+        animation-name: sn1;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        
+    }
+    @keyframes sn1 {
+        0%{
+            transform: rotate(0deg) translateY(98px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translateY(98px) ;
+        }
+    }
+    h3{
+        margin-top: -50px;
+        transform: rotate(90deg);
+    }
+    .s2{
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        background-color: rgb(163, 36, 161);
+        position: absolute;
+        animation-name: sn2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes sn2 {
+        0%{
+            transform: rotate(0deg) translate(122px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translate(122px) ;
+        }
+    }
+    .an1{
+        height: 10px;
+        width: 10px;
+        background-color: aqua;
+        position: relative;
+        border-radius: 50%;
+    }
+    .s3{
+        height: 27px;
+        width: 27px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgb(116, 139, 188) 20%,rgb(32, 111, 215) 40%,rgb(97, 152, 203) 30%,rgb(104, 139, 255) 80%,rgb(26, 147, 158));
+        position: absolute;
+        animation-name: sn3;
+        animation-duration: 120s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes sn3 {
+        0%{
+            transform: rotate(0deg) translateY(-149px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translateY(-149px);
+        }
+    }
+    .s4{
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: rgb(193, 83, 14);
+        position: absolute;
+        animation-name: sn4;
+        animation-duration: 80s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        box-shadow: inset 2px 1px 3px rgb(169, 21, 21);
+
+    }
+    @keyframes sn4 {
+        0%{
+            transform: rotate(0deg) translate(-175px)  rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translate(-175px);
+        }
+    }
+    .s5{
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background: linear-gradient(rgb(158, 140, 67),rgb(237, 132, 39),rgb(155, 171, 68),rgb(189, 114, 10),rgb(117, 42, 42),rgb(87, 87, 58));
+        position: absolute;
+        animation-name: sn5;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes sn5{
+        0%{
+            transform: rotate(0deg) translate(201px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translate(201px) ;
+        }
+    }
+    .s6{
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: rgb(183, 197, 197);
+        position: absolute;
+        animation-name: sn6;
+        animation-duration: 160s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes sn6 {
+        0%{
+            transform: rotate(0deg) translateY(225px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translateY(225px);
+        }
+    }
+    .s7{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: linear-gradient(rgb(58, 143, 160),rgb(113, 149, 199),rgb(105, 151, 209),rgb(88, 158, 202),rgb(82, 161, 185),rgb(112, 175, 205));
+        position: absolute;
+        animation-name: sn7;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes sn7 {
+        0%{
+            transform: rotate(0deg) translateX(-250px) rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg) translateX(-250px) ;
+        }
+    }
+</style>
+<body>
+    <div class="Main">
+        <div class="m1">
+            <div class="s1"><h3>Earth</h3></div>
+            <div class="m2">
+                <div class="s2"><h3>Earth</h3></div>
+                <div class="m3">
+                    <div class="s3"><h3>Earth</h3></div>
+                    <div class="m4">
+                        <div class="s4"><h3>Earth</h3></div>
+                        <div class="m5">
+                            <div class="s5"><h3>Earth</h3></div>
+                            <div class="m6">
+                                <div class="s6"><h3>Earth</h3></div>
+                                <div class="m7">
+                                    <div class="s7"><h3>Earth</h3></div>
+                                    <div class="sun"></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css2?family=Julee&display=swap' rel='stylesheet' type='text/css'>
+
+
+
+  <title>Document</title>
+</head>
+<style>
+  body{
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(/Img/CT\ Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Color{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(34, 120, 129, 0.333);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    /* border-radius: 20px; */
+  }
+  .main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+
+  }
+
+  
+  
+  .C{
+    font-size: 350px;
+    font-weight: 900;
+    position: absolute;
+    color: rgb(32, 147, 200);
+    text-shadow: 2px 5px 2px rgb(126, 126, 126);
+    font-family: 'IM Fell DW Pica SC', serif;
+
+  }
+  .T{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 300;
+    color: yellow;
+    text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.372);
+    transform-style: preserve-3d; 
+    margin-top: 50px;
+    margin-left: 40px;
+    animation: T 3s  infinite linear;
+    font-family: 'MedievalSharp', cursive;
+  }
+  @keyframes T {
+    0%{
+
+    }
+    100%{
+      transform: rotateY(360deg);
+    }
+  }
+  .custom-loader {
+    margin-top: -130px;
+    margin-left: 40px;
+  width:30px;
+  height:30px;
+  --c:radial-gradient(farthest-side,yellow 80%,#0000);
+  position: absolute;
+  background: 
+    var(--c) 50% 0%,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
+    var(--c) 0    50%;
+  background-size:12px 12px;
+  background-repeat:no-repeat;
+  animation:s7 2.5s infinite linear;
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.543));
+}
+@keyframes s7 {
+  to{
+    transform: rotate(.5turn)
+    }
+    }
+</style>
+<body>
+  <div class="Color"></div>
+  <div class="main">
+    <div class="C">
+      C
+    </div>
+    <div class="T">
+      T
+    </div>
+    <div class="custom-loader"></div>
+  </div>
+</body>
+</html>

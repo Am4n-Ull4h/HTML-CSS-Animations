@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: aquamarine;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+    }
+    .Cut1{
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        border-radius: 50%;
+
+    }
+    .Cut1::before{
+        content: '';
+        position: absolute;
+        height: 200px;
+        width: 300px;
+        background-color: aquamarine;
+        margin-top: -50px;
+        transform: skewY(40deg);
+
+
+    }
+    .Red {
+    height: 62px;
+    width: 187px;
+    background-color: red;
+    position: absolute;
+    margin-top: -197px;
+    margin-left: 31px;
+    padding: 21px;
+    border-radius: 50%;
+    transform: skewY(38deg);
+}
+.Seed1{
+    height: 15px;
+    width: 4px;
+    margin-top: 32px;
+    position: absolute;
+    background-color: black;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100%  ;
+    transform: skew(320deg);
+}
+.Seed2{
+    height: 15px;
+    width: 4px;
+    margin-top: -11px;
+    margin-left: 68px;
+    position: absolute;
+    background-color: black;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100%  ;
+    transform: skew(320deg);
+}
+.Seed3{
+    height: 15px;
+    width: 4px;
+    margin-top: 22px;
+    margin-left: 99px;
+    position: absolute;
+    background-color: black;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100%  ;
+    transform: skew(320deg);
+}
+.Seed4{
+    height: 15px;
+    width: 4px;
+    margin-top: 56px;
+    margin-left: 47px;
+    position: absolute;
+    background-color: black;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100%  ;
+    transform: skew(320deg);
+}
+.Seed5{
+    height: 15px;
+    width: 4px;
+    margin-top: 13px;
+    margin-left: 156px;
+    position: absolute;
+    background-color: black;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100%  ;
+    transform: skew(320deg);
+}
+.Cut2 {
+    height: 200px;
+    width: 301px;
+    background-color: green;
+    border-radius: 52% 49% 48% 52% / 72% 73% 27% 27%;
+    margin-left: 26px;
+    position: absolute;
+    margin-top: -278px;
+    transform: rotateZ(43deg);
+}
+.Watermalon{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transition: all 1s ;
+}
+.Watermalon:hover .Cut2{
+    animation-name: side;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    
+}
+@keyframes side {
+    0%{
+        height: 200px;
+    width: 301px;
+    background-color: green;
+    border-radius: 52% 49% 48% 52% / 72% 73% 27% 27%;
+    margin-left: 26px;
+    position: absolute;
+    margin-top: -278px;
+    transform: rotateZ(43deg);
+    }
+
+    100%{
+        margin-top: -215px;
+    margin-left: 121px;
+    transform: rotateZ(34deg);
+    box-shadow: 0px 10px 10px rgb(57, 67, 53);
+    }
+}
+.Watermalon:hover .Cut1{
+    animation-name: side2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes side2 {
+    0%{
+    }
+
+    100%{
+        box-shadow: 1px 1px 5px black,-1px -1px 5px rgb(62, 59, 59);;
+    }
+}
+.p1{
+    height: 80px ;
+    width: 70px;
+    position: absolute;
+    background-color: red;
+    transform: rotateZ(125deg);
+    border-radius: 26% 23% 0% 48% / 96% 100% 0% 0%  ;
+    margin-top: -7px;
+    margin-left: 30px;
+    
+    
+}
+.p2{
+    height: 80px ;
+    width: 70px;
+    position: absolute;
+    background-color: red;
+    transform: rotateZ(125deg);
+    border-radius: 26% 23% 0% 48% / 96% 100% 0% 0%  ;
+    margin-top: -7px;
+    margin-left: 30px;
+   
+}
+.p3{
+    height: 80px ;
+    width: 70px;
+    position: absolute;
+    background-color: red;
+    transform: rotateZ(125deg);
+    border-radius: 26% 23% 0% 48% / 96% 100% 0% 0%  ;
+    margin-top: -7px;
+    margin-left: 30px;
+    
+}
+.Watermalon:hover .p1{
+    animation-name: pem;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.Watermalon:hover .p2{
+    animation-name: pem2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+.Watermalon:hover .p3{
+    animation-name: pem3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+@keyframes pem {
+    0%{
+
+    }
+    10%{
+        margin-top: -190px;
+    }
+    100%{
+        margin-top: -300px;
+        margin-left: 300px;
+        transform: rotate(110deg);
+    }
+    
+}
+@keyframes pem2 {
+    0%{
+
+    }
+    10%{
+        margin-top: -190px;
+    }
+    100%{
+        margin-top: -370px;
+        margin-left: 370px;
+        transform: rotate(170deg);
+        height: 120px;
+    }
+    
+}
+@keyframes pem3 {
+    0%{
+
+    }
+    10%{
+        margin-top: -190px;
+    }
+    100%{
+        margin-top: -440px;
+        margin-left: 450px;
+        transform: rotate(210deg);
+        height: 140px;
+    }
+    
+}
+.dot1{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    margin-left: 25px;
+    margin-top: 30px;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100% ;
+}
+.dot2{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100% ;
+}
+.dot3{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 0% 100% 0% 100% / 0% 100% 3% 100% ;
+}
+</style>
+<body>
+    <div class="Watermalon">
+        <div class="Cut1"></div>
+        <div class="Red">
+            <div class="Seed1"></div>
+            <div class="Seed2"></div>
+            <div class="Seed3"></div>
+            <div class="Seed4"></div>
+            <div class="Seed5"></div>
+            <div class="p1"><div class="dot1"></div></div>
+            <div class="p2"><div class="dot2"></div></div>
+            <div class="p3"><div class="dot3"></div></div>
+        </div>
+        <div class="Cut2"></div>
+    </div>
+</body>
+</html>

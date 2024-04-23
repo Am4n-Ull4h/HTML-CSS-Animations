@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(19, 103, 138);
+
+    }
+    .Roll{
+        height: 100px;
+        width: 120px;
+        border-radius: 50%;
+        background: linear-gradient(rgb(19, 103, 138) 30%,rgb(35, 27, 11) 30%,rgb(19, 103, 138) 50% );
+        animation-name: rol;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+    @keyframes rol {
+        0%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    .Ball{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: rgb(9, 58, 68);
+        border-radius: 50%;
+        transform: rotate(0deg);
+        margin-left: 81px;
+        margin-top: 26px;
+        animation-name: top;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: ease-in;
+        animation-delay: 2s;
+
+        
+    }
+    @keyframes top {
+        0%{
+            transform: translateY(0px);
+            
+        }
+        3%{
+            background-color: rgb(9, 58, 68);
+        }
+        
+        100%{
+            transform: translateY(-120px);
+            background-color: rgb(208, 79, 35);
+            
+        }
+    }
+
+    .Ball2{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: rgb(9, 58, 68);
+        border-radius: 50%;
+        transform: rotate(0deg);
+        margin-left: -81px;
+        margin-top: 20px;
+        animation-name: bot;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: ease-in;
+        animation-delay: 0s;
+
+        
+    }
+    @keyframes bot {
+        0%{
+            transform: translateY(0px);
+        }
+        3%{
+            background-color: rgb(9, 58, 68);
+        }
+        100%{
+            transform: translateY(120px);
+            background-color: rgb(208, 79, 35);
+        }
+    }
+
+    
+</style>
+<body>
+    <div class="Roll">
+
+    </div>
+    <div class="Ball"></div>
+    <div class="Ball2"></div>
+
+</body>
+</html>

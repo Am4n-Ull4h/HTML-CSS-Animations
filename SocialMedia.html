@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #23698b;
+    }
+    .Main a{
+        text-decoration: none;
+    }
+    .Share{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black,inset 1px 1px 1px red,inset -1px -1px 1px red;
+        transition: all 2s;
+        
+
+    }
+    .Share:hover{
+        transform: rotate(360deg);
+    }
+
+    .Facebook{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Facebook{
+        margin-left: -230px;
+        opacity: 1;
+    }
+    .Share i{
+        font-size: 25px;
+        color: #23698b;
+        
+    }
+    .Linkedin{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity:0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    
+    }
+    .Share:hover .Linkedin{
+        margin-left: 170px;
+        opacity: 1;
+    }
+    .Youtube{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Youtube{
+        margin-left: -180px;
+        margin-top: 70px;
+        opacity: 1;
+    }
+    .Instagram{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Instagram{
+        margin-left: 120px;
+        margin-top: 70px;
+        opacity: 1;
+    }
+    .Location{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Location{
+        margin-top: 120px;
+        opacity: 1;
+    }
+    .Whatsapp{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Whatsapp{
+        margin-left: -180px;
+        margin-top: -115px;
+        opacity: 1;
+    }
+    .Globe{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Globe{
+        margin-left: 120px;
+        margin-top: -115px;
+        opacity: 1;
+    }
+    .Twitter{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 1px black, -1px -1px 4px black;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .Share:hover .Twitter{
+        margin-top: -160px;
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="Main">
+        <a href="##">
+            <div class="Share">
+                <i class="fa-sharp fa-solid fa-share-nodes" style="border: 2px solid black; border-radius: 50%; padding: 7px;"></i>
+                <a href="##">
+                    <div class="Facebook"><i class="fa-brands fa-facebook fa-beat-fade" style="color: #5893f9;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Linkedin"><i class="fa-brands fa-linkedin fa-beat-fade" style="color: #063a93;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Youtube"><i class="fa-brands fa-youtube fa-beat-fade" style="color: #970c02;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Instagram"><i class="fa-brands fa-instagram fa-beat-fade" style="color: #c33c9f;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Location"><i class="fa-solid fa-location-dot fa-beat-fade" style="color: #ac2035;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Whatsapp"><i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #60c379;"></i></i></div>
+                </a>
+                <a href="##">
+                    <div class="Globe"><i class="fa-brands fa-github" style="color: #c20f21;"></i></div>
+                </a>
+                <a href="##">
+                    <div class="Twitter"><i class="fa-brands fa-twitter fa-beat-fade" style="color: #6c91d0;"></i></div>
+                </a>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

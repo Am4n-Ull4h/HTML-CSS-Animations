@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+        width: 300%;
+        background-color: rgb(118, 120, 120);
+        flex-direction: column;
+        
+    }
+    
+    .ad{
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        /* animation: perspectiveLeft 2s linear infinite; */
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgb(52, 1, 1),-2px -2px 5px rgb(57, 2, 2);
+
+    }
+    input{
+        z-index: 2;
+        border: none;
+        outline: none;
+        padding: 50px;
+        width: 50px;
+        height: 50px;
+        /* visibility: hidden; */
+        opacity: .0;
+        cursor: pointer;
+        position: absolute;
+    }
+    .ad span{
+        height: 2px;
+        width: 20px;
+        background-color: aliceblue;
+        color: white;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgb(93, 83, 83),-2px -2px 5px rgb(93, 83, 83);
+
+    }
+    @keyframes perspectiveLeft {
+  0% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+  }
+}
+    .ad span::before{
+        position: absolute;
+        content: '';
+        margin-top: -9px;
+        height: 2px;
+        width: 20px;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 5px rgb(93, 83, 83),-2px -2px 5px rgb(93, 83, 83);
+        color: white;
+    }
+    .ad span::after{
+        position: absolute;
+        content: '';
+        margin-top: 9px;
+        height: 2px;
+        box-shadow: 2px 2px 5px rgb(93, 83, 83),-2px -2px 5px rgb(93, 83, 83);
+
+        width: 20px;
+        background-color: aliceblue;
+        color: white;
+    }
+    input:checked ~ .ad span{
+        background-color: brown;
+        background-color: transparent;
+        transition: all .5s ease-in-out;
+        box-shadow: 0px 0px 0px transparent,-2px -2px 5px transparent;
+
+        
+    }
+    input:checked ~ .ad span::after{
+        background-color: brown;
+        transform: rotate(40deg ) rotateZ(360deg) scale(2);
+        margin-top: -1px;
+        margin-left: -5px;
+        width: 30px;
+        transition: all 1s ease-in-out;
+        
+    }
+    input:checked ~ .ad span::before{
+        background-color: brown;
+        transform: rotate(-40deg) rotateZ(360deg) scale(2);
+        margin-top: -1px;
+        width: 30px;
+        transition: all 1s ease-in-out;
+
+        margin-left: -5px;
+    }
+    input:not(:checked) ~ .ad span{
+        visibility: visible;
+        
+        transition: all .5s ease-out;
+    }
+    input:not(:checked) ~ .ad span::before{
+        transition: all 1s ease-in-out;
+        margin-top: -9px;
+        height: 2px;
+        width: 20px;
+        background-color: aliceblue;
+        color: white;
+    }
+    input:not(:checked) ~ .ad span::after{
+        transition: all 1s ease-in-out;
+        margin-top: 9px;
+        height: 2px;
+        width: 20px;
+        background-color: aliceblue;
+        color: white;
+        
+    }
+    .amn{
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        margin-top: -500px;
+        position: sticky;
+        top: 40%;
+        border-radius: 50px;
+        bottom: 40%;
+        left: 40%;
+        mix-blend-mode: screen;
+        right: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .amn:active .as{
+        height: 20px;
+        width: 20px;
+        border: 2px solid red;
+        position: absolute;
+        top: 0;
+    }
+    .amn:active .al{
+        height: 10px;
+        width: 10px;
+        border: 2px solid rgb(60, 255, 0);
+    }
+    input:hover ~.ad{
+        margin-left: 250px;
+    }
+    .ll{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        border: 1px dotted greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        position: absolute;
+        background:linear-gradient(red,greenyellow,blue) ;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-position: center;
+            transform-origin: 50px;
+            color: transparent;
+            margin-top: 200px;
+            font-size: 100px;
+    }
+    
+</style>
+<body>
+    <div class="ll">
+        <input type="checkbox" class="as">
+    <label class="ad">
+        <span></span>
+        
+    </label>
+    
+    </div>
+
+
+
+    <div class="amn">
+        <div class="as">
+            <div class="al">
+
+            </div>
+        </div>
+    </div>
+
+    <h1>Aman</h1>
+</body>
+</html>
